@@ -1,0 +1,9 @@
+[project]
+name = "docsight"
+version = "0.1.0"
+description = "Citation-grounded Q&A over technical documentation"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
