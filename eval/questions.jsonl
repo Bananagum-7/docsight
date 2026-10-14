@@ -1,0 +1,50 @@
+{"id": "q01", "question": "How can I run a function after the response has already been sent to the client?", "gold_docs": ["tutorial/background-tasks.md"], "answerable": true}
+{"id": "q02", "question": "My React frontend on localhost:3000 gets blocked by the browser when calling my API on port 8000. How do I fix it?", "gold_docs": ["tutorial/cors.md"], "answerable": true}
+{"id": "q03", "question": "How do I make sure a database session is closed once each request finishes?", "gold_docs": ["tutorial/dependencies/dependencies-with-yield.md", "tutorial/sql-databases.md"], "answerable": true}
+{"id": "q04", "question": "How can I test my endpoints with pytest without starting a server?", "gold_docs": ["tutorial/testing.md"], "answerable": true}
+{"id": "q05", "question": "How do I accept an uploaded file and get its original filename?", "gold_docs": ["tutorial/request-files.md"], "answerable": true}
+{"id": "q06", "question": "How should I hash user passwords and issue signed access tokens at login?", "gold_docs": ["tutorial/security/oauth2-jwt.md"], "answerable": true}
+{"id": "q07", "question": "My main.py is getting huge. How do I split endpoints across several files?", "gold_docs": ["tutorial/bigger-applications.md"], "answerable": true}
+{"id": "q08", "question": "How do I return 201 Created instead of 200 from a create endpoint?", "gold_docs": ["tutorial/response-status-code.md"], "answerable": true}
+{"id": "q09", "question": "How do I stop the password field from appearing in the JSON my endpoint returns?", "gold_docs": ["tutorial/response-model.md", "tutorial/extra-models.md"], "answerable": true}
+{"id": "q10", "question": "How do I reject a query string parameter longer than 50 characters?", "gold_docs": ["tutorial/query-params-str-validations.md"], "answerable": true}
+{"id": "q11", "question": "What is the right way to send a 404 with a custom message when an item doesn't exist?", "gold_docs": ["tutorial/handling-errors.md"], "answerable": true}
+{"id": "q12", "question": "How can I add a header with the processing time to every single response?", "gold_docs": ["tutorial/middleware.md"], "answerable": true}
+{"id": "q13", "question": "How do I serve images and CSS files from a folder?", "gold_docs": ["tutorial/static-files.md"], "answerable": true}
+{"id": "q14", "question": "How do I read username and password sent as HTML form fields instead of JSON?", "gold_docs": ["tutorial/request-forms.md"], "answerable": true}
+{"id": "q15", "question": "How should I load configuration like API keys from environment variables?", "gold_docs": ["advanced/settings.md", "environment-variables.md"], "answerable": true}
+{"id": "q16", "question": "How do I load a machine learning model once when the app starts and release it on shutdown?", "gold_docs": ["advanced/events.md"], "answerable": true}
+{"id": "q17", "question": "How do I build a real-time chat endpoint where client and server keep sending messages?", "gold_docs": ["advanced/websockets.md"], "answerable": true}
+{"id": "q18", "question": "In tests, how can I replace a dependency that calls an external service with a fake one?", "gold_docs": ["advanced/testing-dependencies.md"], "answerable": true}
+{"id": "q19", "question": "How do I set a cookie on the response?", "gold_docs": ["advanced/response-cookies.md"], "answerable": true}
+{"id": "q20", "question": "How do I return an HTML page instead of JSON from an endpoint?", "gold_docs": ["advanced/custom-response.md", "advanced/templates.md"], "answerable": true}
+{"id": "q21", "question": "My app is served under /api/v1 behind a reverse proxy and the interactive docs page fails to load the schema. What should I configure?", "gold_docs": ["advanced/behind-a-proxy.md"], "answerable": true}
+{"id": "q22", "question": "How do I use multiple CPU cores by running several worker processes in production?", "gold_docs": ["deployment/server-workers.md", "deployment/docker.md"], "answerable": true}
+{"id": "q23", "question": "What should a Dockerfile for a FastAPI app look like?", "gold_docs": ["deployment/docker.md"], "answerable": true}
+{"id": "q24", "question": "When should a path operation function be declared with async def versus plain def?", "gold_docs": ["async.md"], "answerable": true}
+{"id": "q25", "question": "How do I show an example request body in the interactive API docs?", "gold_docs": ["tutorial/schema-extra-example.md"], "answerable": true}
+{"id": "q26", "question": "How do I update only the fields the client actually sent in a PATCH request?", "gold_docs": ["tutorial/body-updates.md"], "answerable": true}
+{"id": "q27", "question": "How do I turn a Pydantic model containing datetime fields into something I can store as JSON?", "gold_docs": ["tutorial/encoder.md"], "answerable": true}
+{"id": "q28", "question": "How do I require a path parameter to be an integer greater than zero?", "gold_docs": ["tutorial/path-params-numeric-validations.md"], "answerable": true}
+{"id": "q29", "question": "How do I apply an API key check to every endpoint in the application at once?", "gold_docs": ["tutorial/dependencies/global-dependencies.md"], "answerable": true}
+{"id": "q30", "question": "Can I use a class instead of a function as a dependency?", "gold_docs": ["tutorial/dependencies/classes-as-dependencies.md"], "answerable": true}
+{"id": "q31", "question": "How do I read the User-Agent header sent by the client?", "gold_docs": ["tutorial/header-params.md"], "answerable": true}
+{"id": "q32", "question": "How do I connect my app to a SQL database and create tables for my models?", "gold_docs": ["tutorial/sql-databases.md"], "answerable": true}
+{"id": "q33", "question": "How do I disable the /docs page in production but keep it in development?", "gold_docs": ["how-to/conditional-openapi.md"], "answerable": true}
+{"id": "q34", "question": "How do I group my endpoints under named sections in the generated docs?", "gold_docs": ["tutorial/path-operation-configuration.md", "tutorial/metadata.md"], "answerable": true}
+{"id": "q35", "question": "I have an existing Flask application. Can I run it inside my FastAPI app?", "gold_docs": ["advanced/wsgi.md"], "answerable": true}
+{"id": "q36", "question": "How do I send a large file to the client in chunks without loading it all into memory?", "gold_docs": ["advanced/custom-response.md", "advanced/stream-data.md"], "answerable": true}
+{"id": "q37", "question": "How can a token grant read access to items but not write access?", "gold_docs": ["advanced/security/oauth2-scopes.md"], "answerable": true}
+{"id": "q38", "question": "How do I protect an endpoint with a simple username and password prompt in the browser?", "gold_docs": ["advanced/security/http-basic-auth.md"], "answerable": true}
+{"id": "q39", "question": "My test needs to await an async database call. How do I write async tests?", "gold_docs": ["advanced/async-tests.md"], "answerable": true}
+{"id": "q40", "question": "Can I automatically generate a TypeScript client for my frontend from the API?", "gold_docs": ["advanced/generate-clients.md"], "answerable": true}
+{"id": "q41", "question": "How do I push a stream of events from the server to the browser over plain HTTP?", "gold_docs": ["tutorial/server-sent-events.md"], "answerable": true}
+{"id": "q42", "question": "How do I get the client's IP address from the incoming request?", "gold_docs": ["advanced/using-request-directly.md"], "answerable": true}
+{"id": "u01", "question": "How do I deploy a FastAPI app to AWS Lambda with Mangum?", "gold_docs": [], "answerable": false}
+{"id": "u02", "question": "How do I limit each client IP to 100 requests per minute?", "gold_docs": [], "answerable": false}
+{"id": "u03", "question": "How do I serve my FastAPI app over HTTP/3?", "gold_docs": [], "answerable": false}
+{"id": "u04", "question": "What is the default maximum request body size FastAPI accepts?", "gold_docs": [], "answerable": false}
+{"id": "u05", "question": "How do I configure Celery beat to run a periodic job every night?", "gold_docs": [], "answerable": false}
+{"id": "u06", "question": "What is the default connection pool size of SQLAlchemy's create_engine?", "gold_docs": [], "answerable": false}
+{"id": "u07", "question": "How do I implement refresh token rotation for JWT logins?", "gold_docs": [], "answerable": false}
+{"id": "u08", "question": "How do I add GraphQL subscriptions to my FastAPI app?", "gold_docs": [], "answerable": false}
