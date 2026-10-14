@@ -18,6 +18,9 @@ class Reranker(Protocol):
 
 
 class CrossEncoderReranker:
+    # Scores are comparable across queries, so a threshold on them is meaningful
+    calibrated = True
+
     def __init__(self, model_name: str = "BAAI/bge-reranker-base", max_chars: int = 2000):
         from sentence_transformers import CrossEncoder
 
@@ -35,6 +38,8 @@ class CrossEncoderReranker:
 
 class NoopReranker:
     """Keeps fusion order. Used for the 'no rerank' ablation and in tests."""
+
+    calibrated = False
 
     def rerank(self, query: str, candidates: list[ScoredChunk], top_k: int) -> list[ScoredChunk]:
         return candidates[:top_k]
