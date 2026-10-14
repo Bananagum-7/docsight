@@ -1,0 +1,23 @@
+# docker compose up --build
+#   UI:  http://localhost:8501
+#   API: http://localhost:8000/docs
+services:
+  api:
+    build: .
+    environment:
+      SERVICE: api
+      PORT: "8000"
+    env_file: .env
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  ui:
+    build: .
+    environment:
+      SERVICE: ui
+      PORT: "8501"
+    env_file: .env
+    ports: ["8501:8501"]

@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      # Light install: no torch / model downloads needed for tests
+      - run: pip install pydantic numpy rank_bm25 qdrant-client groq fastapi httpx pytest python-dotenv
+      - name: Unit tests
+        run: pytest -q
+      - name: Offline retrieval smoke test on the real docs
+        run: |
+          bash scripts/fetch_docs.sh
+          python scripts/build_index.py --embedder hash
+          python eval/run_retrieval.py --embedder hash --no-rerank
