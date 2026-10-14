@@ -1,0 +1,22 @@
+# Core
+pydantic>=2.6
+numpy>=1.26
+rank_bm25>=0.2.2
+qdrant-client>=1.9
+fastembed>=0.3          # dense embeddings on CPU (ONNX)
+sentence-transformers>=3.0  # cross-encoder reranker
+groq>=0.9
+python-dotenv>=1.0
+
+# Serving
+fastapi>=0.110
+uvicorn[standard]>=0.29
+streamlit>=1.35
+
+# Observability (optional at runtime)
+langfuse>=2.0
+
+# Eval / dev
+pytest>=8.0
+httpx>=0.27
+requests>=2.31
