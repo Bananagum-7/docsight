@@ -5,5 +5,5 @@ __pycache__/
 data/fastapi
 data/index/
 data/cache/
-eval/results/*.json
+eval/results/
 .pytest_cache/
