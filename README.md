@@ -89,6 +89,8 @@ eval/           question set, retrieval ablation, answer eval, judge agreement
 scripts/        fetch docs, build index
 ```
 
+See [DEVELOPMENT_TIMELINE.md](DEVELOPMENT_TIMELINE.md) for the order the project was built in (dates are estimates).
+
 ## Limitations
 
 - The eval set is 50 questions written by one person; numbers have wide error bars.
